@@ -3,17 +3,18 @@ package edu.ujcv.progra1;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
-        int[] elementos = {3,2,9,24};
-        shellSort s = new ShellSort();
+        int[] elementos = {2,6,4,7,9,5,1,3,8,4,10,12,45,36};
+        ShellSort s = new ShellSort();
         elementos = s.shellSort(elementos);
 
-        for (int i = 0; i < elementos.length; i++) {
-            System.out.println(elementos[i]);
+        for (int elemento : elementos) {
+            System.out.println(elemento);
         }
 
         //elementos = new int[]{3,2,4,5,6,7,9,9,10,3,5};
-        System.out.println("\n\ntarda "+ s.sort(elementos)+ " milisegundos");
+        System.out.println("\n\ntarda " + s.sort(elementos) + " milisegundos");
     }
-}
+    }
+
