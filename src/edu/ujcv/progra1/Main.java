@@ -7,7 +7,7 @@ public class Main {
 
         int[] elementos = {2,6,4,7,9,5,1,3,8,4,10,12,45,36};
         HeapSort s = new HeapSort();
-        elementos = s.heapSort(elementos);
+        elementos = s.heapsort(elementos);
 
         for (int elemento : elementos) {
             System.out.println(elemento);
