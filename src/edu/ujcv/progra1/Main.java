@@ -6,8 +6,8 @@ public class Main {
         // write your code here
 
         int[] elementos = {2,6,4,7,9,5,1,3,8,4,10,12,45,36};
-        ShellSort s = new ShellSort();
-        elementos = s.shellSort(elementos);
+        HeapSort s = new heapSort();
+        elementos = s.heapSort(elementos);
 
         for (int elemento : elementos) {
             System.out.println(elemento);
