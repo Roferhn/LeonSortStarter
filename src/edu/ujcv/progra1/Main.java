@@ -1,20 +1,41 @@
 package edu.ujcv.progra1;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
 
-        int[] elementos = {2,6,4,7,9,5,1,3,8,4,10,12,45,36};
-        HeapSort s = new HeapSort();
-        elementos = s.heapsort(elementos);
+        int[] elementos = new int[10000];
+        Random r= new Random();
 
-        for (int elemento : elementos) {
-            System.out.println(elemento);
+        for (int i=0; i<elementos.length; i++) {
+
+            elementos[i]= r.nextInt();
         }
 
-        //elementos = new int[]{3,2,4,5,6,7,9,9,10,3,5};
-        System.out.println("\n\ntarda " + s.sort(elementos) + " milisegundos");
+
+       // HeapSort H = new HeapSort();
+       // H.heapsort(elementos);
+
+        //ShellSort S = new ShellSort();
+       // S.shellSort(elementos);
+
+        BubleSort B = new BubleSort();
+        B.bubleSort(elementos);
+
+       // MergeSort M = new MergeSort();
+        //M.mergeSort(elementos);
+
+        for (int elemento : elementos) {
+            //System.out.println(elemento);
+        }
+
+        //System.out.println("\n\ntarda " + H.sort(elementos) + " milisegundos");
+        //System.out.println("\n\ntarda " + S.sort(elementos) + " milisegundos");
+        System.out.println("\n\ntarda " + B.sort(elementos) + " milisegundos");
+        //System.out.println("\n\ntarda " + M.sort(elementos) + " milisegundos");
     }
     }
 
